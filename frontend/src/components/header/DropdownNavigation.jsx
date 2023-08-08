@@ -48,7 +48,7 @@ function DropdownNavigation({ setLoggedIn, userData }) {
         alert(`${userEmail} is now deactivated`);
         localStorage.removeItem("user");
         setLoggedIn(false);
-        navigate("/login");
+        navigate("/");
         localStorage.removeItem("token");
         window.location.reload(true);
       } catch (error) {
