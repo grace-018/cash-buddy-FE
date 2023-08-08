@@ -120,7 +120,7 @@ function DropdownNavigation({ setLoggedIn, userData }) {
 
   const handleLogout = () => {
     setLoggedIn(false);
-    navigate("/login");
+    navigate("/");
     clearData();
     localStorage.removeItem("token");
     window.location.reload(true);
