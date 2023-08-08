@@ -1,0 +1,74 @@
+#root {
+  width: 100%;
+}
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.nav {
+  width: 100%;
+}
+
+.button {
+  width: 10vw;
+  position: absolute;
+  right: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.scroll-to-top {
+  position: relative;
+  width: 100%;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound img {
+  width: 100vw;
+}
+
+.negative {
+  color: #b42b3f;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    width: 6vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    width: 4vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .button {
+    width: 3vw;
+  }
+  .notFound img {
+    width: 95vw;
+    height: 90vh;
+  }
+}

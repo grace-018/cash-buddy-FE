@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  line-height: 5px;
+  font-size: small;
+}
+
+.company {
+  font-family: "Montserrat", sans-serif;
+}
