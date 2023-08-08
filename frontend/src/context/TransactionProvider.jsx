@@ -33,7 +33,6 @@ const TransactionProvider = ({ children }) => {
         username: user.data[0].username,
       };
 
-      console.log(user);
       setUserData(userInfo);
 
       const userDataId = user.data[0]._id;
@@ -52,7 +51,6 @@ const TransactionProvider = ({ children }) => {
 
         const expenses = await expenseResponse.json();
 
-        console.log(expenses);
         if (expenses.data) {
           setExpData(expenses.data);
         }
@@ -72,8 +70,6 @@ const TransactionProvider = ({ children }) => {
         if (income.data) {
           setIncData(income.data);
         }
-
-        console.log(income.data);
       }
     } catch (error) {
       console.error("Error fetching data", error.message);

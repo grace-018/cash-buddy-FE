@@ -119,12 +119,10 @@ function DropdownNavigation({ setLoggedIn, userData }) {
   };
 
   const handleLogout = () => {
-    console.log("Logout is clicked");
-    sessionStorage.removeItem("user");
     setLoggedIn(false);
     navigate("/login");
     clearData();
-    sessionStorage.removeItem("token");
+    localStorage.removeItem("token");
     window.location.reload(true);
   };
   return (
